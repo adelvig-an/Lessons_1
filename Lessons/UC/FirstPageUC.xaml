@@ -34,25 +34,43 @@
 
         <StackPanel Grid.Row="1" Grid.Column="1">
             <TextBlock Margin="5" Text="Фигура" />
-            <ComboBox x:Name="cbxFigure" Margin="5" ItemsSource="{Binding ListFigure}" />
+            <ComboBox
+                x:Name="cbxFigure"
+                Margin="5"
+                ItemsSource="{Binding ListFigure}" />
         </StackPanel>
 
-        <WrapPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center">
+        <WrapPanel
+            Grid.Row="2"
+            Grid.Column="1"
+            HorizontalAlignment="Center">
             <StackPanel Width="130">
                 <TextBlock Margin="5" Text="Ширина:" />
-                <TextBox x:Name="txbWidth" Margin="5" Text="{Binding Figures.Width}" />
+                <TextBox
+                    x:Name="txbWidth"
+                    Margin="5"
+                    Text="{Binding Figures.Width}" />
             </StackPanel>
             <StackPanel Width="130">
                 <TextBlock Margin="5" Text="Высота:" />
-                <TextBox x:Name="txbHeight" Margin="5" Text="{Binding Figures.Height}" />
+                <TextBox
+                    x:Name="txbHeight"
+                    Margin="5"
+                    Text="{Binding Figures.Height}" />
             </StackPanel>
         </WrapPanel>
 
         <StackPanel Grid.Row="3" Grid.Column="1">
-            <Button x:Name="btResult" Margin="5" Content="Расчитать площадь" />
+            <Button
+                x:Name="btResult"
+                Margin="5"
+                Content="Расчитать площадь" />
             <TextBlock Margin="5" Text="Площадь:" />
-            <TextBox x:Name="txbArea" Margin="5" Text="{Binding Figures.Area}" />
+            <TextBox
+                x:Name="txbArea"
+                Margin="5"
+                Text="{Binding Figures.Area}" />
         </StackPanel>
-        
+
     </Grid>
 </UserControl>

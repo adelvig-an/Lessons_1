@@ -8,11 +8,6 @@ namespace Lessons.Model
     {
         public double Width { get; set; }
 
-        public Square(double width)
-        {
-            Width = width;
-        }
-
         public override double P
         {
             get { return Width * 4; }
@@ -20,7 +15,7 @@ namespace Lessons.Model
 
         public override double Area
         {
-            get { return Width * 2; }
+            get { return Width * Width; }
         }
     }
 }

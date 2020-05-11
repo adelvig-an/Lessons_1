@@ -9,11 +9,22 @@ namespace Lessons.VM
 {
     public class FirstPageVM : PageVM
     {
-        Figures square = new Square(5);
+        public Square Square { get; }
 
-        Figures rectangle = new Rectangle(7, 4);
+        public Rectangle Rectangle { get; }
 
-        Figures triangle = new Triangle(4, 4, 5);
+        public FirstPageVM()
+        {
+            Square = new Square
+            {
+                
+            };
+
+            Rectangle = new Rectangle
+            {
+
+            };
+        }
         
     }
 }
