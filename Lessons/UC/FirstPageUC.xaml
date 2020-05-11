@@ -64,7 +64,8 @@
             <Button
                 x:Name="btResult"
                 Margin="5"
-                Content="Расчитать периметр и площадь" />
+                Content="Расчитать периметр и площадь"
+                Command="{Binding Result}"/>
             <TextBlock Margin="5" Text="Периметр:" />
             <TextBox x:Name="tbxPerimetr" Margin="5" Text="{Binding Rectangle.P, Mode=OneWay}" />
             <TextBlock Margin="5" Text="Площадь:" />
