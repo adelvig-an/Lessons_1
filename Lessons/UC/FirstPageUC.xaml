@@ -37,7 +37,7 @@
             <ComboBox
                 x:Name="cbxFigure"
                 Margin="5"
-                ItemsSource="{Binding ListFigure}" />
+                ItemsSource="{Binding TypeFigure}" />
         </StackPanel>
 
         <WrapPanel

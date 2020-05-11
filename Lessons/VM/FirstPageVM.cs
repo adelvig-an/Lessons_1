@@ -10,9 +10,8 @@ namespace Lessons.VM
     public class FirstPageVM : PageVM
     {
         public Square Square { get; }
-
         public Rectangle Rectangle { get; }
-
+        public IEnumerable<string> TypeFigure { get; }
         public FirstPageVM()
         {
             Square = new Square
@@ -25,7 +24,7 @@ namespace Lessons.VM
                 Width = 7,
                 Height= 4
             };
+            TypeFigure = LocalStorage.ListFigure;
         }
-        
     }
 }
