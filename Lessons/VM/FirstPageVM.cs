@@ -17,12 +17,13 @@ namespace Lessons.VM
         {
             Square = new Square
             {
-                
+                Width = 5,
             };
 
             Rectangle = new Rectangle
             {
-
+                Width = 7,
+                Height= 4
             };
         }
         

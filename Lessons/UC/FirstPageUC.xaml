@@ -49,14 +49,14 @@
                 <TextBox
                     x:Name="txbWidth"
                     Margin="5"
-                    Text="{Binding Figures.Width}" />
+                    Text="{Binding Rectangle.Width}" />
             </StackPanel>
             <StackPanel Width="130">
                 <TextBlock Margin="5" Text="Высота:" />
                 <TextBox
                     x:Name="txbHeight"
                     Margin="5"
-                    Text="{Binding Figures.Height}" />
+                    Text="{Binding Rectangle.Height}" />
             </StackPanel>
         </WrapPanel>
 
@@ -64,12 +64,14 @@
             <Button
                 x:Name="btResult"
                 Margin="5"
-                Content="Расчитать площадь" />
+                Content="Расчитать периметр и площадь" />
+            <TextBlock Margin="5" Text="Периметр:" />
+            <TextBox x:Name="tbxPerimetr" Margin="5" Text="{Binding Rectangle.P, Mode=OneWay}" />
             <TextBlock Margin="5" Text="Площадь:" />
             <TextBox
                 x:Name="txbArea"
                 Margin="5"
-                Text="{Binding Figures.Area}" />
+                Text="{Binding Rectangle.Area, Mode=OneWay}" />
         </StackPanel>
 
     </Grid>
