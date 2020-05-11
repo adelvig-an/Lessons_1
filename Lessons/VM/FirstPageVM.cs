@@ -16,15 +16,38 @@ namespace Lessons.VM
         {
             Square = new Square
             {
-                Width = 5,
+                Width = TextWidth,
             };
 
             Rectangle = new Rectangle
             {
-                Width = 7,
-                Height= 4
+                Width = TextWidth,
+                Height = TextHeight
             };
             TypeFigure = LocalStorage.ListFigure;
+            Result = new RelayCommand(_ => ResultAction(Rectangle));
         }
+
+        private double text;
+        public double TextWidth 
+        { 
+            get => text; 
+            set => SetProperty(ref text, value); 
+        }
+
+        public double TextHeight
+        {
+            get => text;
+            set => SetProperty(ref text, value);
+        }
+
+        public ICommand Result { get; }
+        public void ResultAction(Rectangle rectangle)
+        {
+            rectangle.Width = TextWidth;
+            rectangle.Height = TextHeight;
+        }
+
+
     }
 }
