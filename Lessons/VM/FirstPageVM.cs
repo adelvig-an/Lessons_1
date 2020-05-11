@@ -9,30 +9,11 @@ namespace Lessons.VM
 {
     public class FirstPageVM : PageVM
     {
-        public Figures Figures { get; }
-        public IEnumerable<string> ListFigure { get; }
+        Figures square = new Square(5);
 
-        public FirstPageVM()
-        {
-            Figures = new Figures
-            {
-                Width = 0,
-                Height = 0,
-                SideA = 0,
-                SideB = 0,
-                SideC = 0,
-                Area = 0
-            };
-            
-            ListFigure = LocalStorage.ListFigure;
-            Result = new RelayCommand(_ => ResultAction());
-        }
+        Figures rectangle = new Rectangle(7, 4);
 
-        public ICommand Result { get; }
-        public void ResultAction()
-        {
-            Figures.Area = Figures.Width * Figures.Height;
-        }
-
+        Figures triangle = new Triangle(4, 4, 5);
+        
     }
 }
