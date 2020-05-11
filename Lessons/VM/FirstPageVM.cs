@@ -46,6 +46,7 @@ namespace Lessons.VM
         {
             rectangle.Width = TextWidth;
             rectangle.Height = TextHeight;
+            OnPropertyChanged(nameof(Rectangle));
         }
 
 

@@ -49,14 +49,14 @@
                 <TextBox
                     x:Name="txbWidth"
                     Margin="5"
-                    Text="{Binding Rectangle.Width}" />
+                    Text="{Binding TextWidth}" />
             </StackPanel>
             <StackPanel Width="130">
                 <TextBlock Margin="5" Text="Высота:" />
                 <TextBox
                     x:Name="txbHeight"
                     Margin="5"
-                    Text="{Binding Rectangle.Height}" />
+                    Text="{Binding TextHeight}" />
             </StackPanel>
         </WrapPanel>
 
