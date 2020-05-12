@@ -49,6 +49,24 @@ namespace Lessons.VM
             OnPropertyChanged(nameof(Rectangle));
         }
 
+        private string isTypeFigure;
+        public string IsTypeFigure
+        {
+            get => isTypeFigure;
+            set
+            {
+                SetProperty(ref isTypeFigure, value);
+                if (value == "Квадрат")
+                {
+                    new Square();
+                }
+                else if (value == "Прямоугольник")
+                {
+                    new Rectangle();
+                }
+                OnPropertyChanged(nameof(Rectangle));
+            }
+        }
 
     }
 }

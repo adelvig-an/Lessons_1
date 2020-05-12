@@ -40,40 +40,91 @@
                 ItemsSource="{Binding TypeFigure}" />
         </StackPanel>
 
-        <WrapPanel
-            Grid.Row="2"
-            Grid.Column="1"
-            HorizontalAlignment="Center">
-            <StackPanel Width="130">
-                <TextBlock Margin="5" Text="Ширина:" />
-                <TextBox
-                    x:Name="txbWidth"
-                    Margin="5"
-                    Text="{Binding TextWidth}" />
-            </StackPanel>
-            <StackPanel Width="130">
-                <TextBlock Margin="5" Text="Высота:" />
-                <TextBox
-                    x:Name="txbHeight"
-                    Margin="5"
-                    Text="{Binding TextHeight}" />
-            </StackPanel>
-        </WrapPanel>
+        <ItemsControl Grid.Row="2"
+                Grid.Column="1"
+                HorizontalAlignment="Center" ItemsSource="{Binding IsTypeFigure}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <StackPanel Width="130">
+                            <TextBlock Margin="5" Text="Ширина:" />
+                            <TextBox
+                                x:Name="txbWidth"
+                                Margin="5"
+                                Text="{Binding TextWidth}" />
+                        </StackPanel>
+                        <StackPanel Width="130">
+                            <TextBlock Margin="5" Text="Высота:" />
+                            <TextBox
+                                x:Name="txbHeight"
+                                Margin="5"
+                                Text="{Binding TextHeight}" />
+                        </StackPanel>
+                    </WrapPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
 
-        <StackPanel Grid.Row="3" Grid.Column="1">
-            <Button
+        <ItemsControl Grid.Row="2"
+                Grid.Column="1"
+                HorizontalAlignment="Center" ItemsSource="{Binding IsTypeFigure}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <StackPanel Width="130">
+                            <TextBlock Margin="5" Text="Ширина:" />
+                            <TextBox
+                        x:Name="txbWidth"
+                        Margin="5"
+                        Text="{Binding TextWidth}" />
+                        </StackPanel>
+                    </WrapPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+        <ItemsControl Grid.Row="3" Grid.Column="1" ItemsSource="{Binding IsTypeFigure}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Button
                 x:Name="btResult"
                 Margin="5"
                 Content="Расчитать периметр и площадь"
                 Command="{Binding Result}"/>
-            <TextBlock Margin="5" Text="Периметр:" />
-            <TextBox x:Name="tbxPerimetr" Margin="5" Text="{Binding Rectangle.P, Mode=OneWay}" />
-            <TextBlock Margin="5" Text="Площадь:" />
-            <TextBox
+                        <TextBlock Margin="5" Text="Периметр:" />
+                        <TextBox x:Name="tbxPerimetr" Margin="5" Text="{Binding Rectangle.P, Mode=OneWay}" />
+                        <TextBlock Margin="5" Text="Площадь:" />
+                        <TextBox
                 x:Name="txbArea"
                 Margin="5"
                 Text="{Binding Rectangle.Area, Mode=OneWay}" />
-        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+        <ItemsControl Grid.Row="3" Grid.Column="1" ItemsSource="{Binding IsTypeFigure}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Button
+                x:Name="btResult"
+                Margin="5"
+                Content="Расчитать периметр и площадь"
+                Command="{Binding Result}"/>
+                        <TextBlock Margin="5" Text="Периметр:" />
+                        <TextBox x:Name="tbxPerimetr" Margin="5" Text="{Binding Square.P, Mode=OneWay}" />
+                        <TextBlock Margin="5" Text="Площадь:" />
+                        <TextBox
+                x:Name="txbArea"
+                Margin="5"
+                Text="{Binding Square.Area, Mode=OneWay}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
 
     </Grid>
 </UserControl>
