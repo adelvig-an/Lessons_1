@@ -9,46 +9,20 @@ namespace Lessons.VM
 {
     public class FirstPageVM : PageVM
     {
-        public Square Square { get; }
-        public Rectangle Rectangle { get; }
         public IEnumerable<string> TypeFigure { get; }
         public FirstPageVM()
         {
-            Square = new Square
+            if (IsTypeFigure == "Квадрат")
             {
-                Width = TextWidth,
-            };
-
-            Rectangle = new Rectangle
+                new Square();
+            }
+            else if (IsTypeFigure == "Прямоугольник")
             {
-                Width = TextWidth,
-                Height = TextHeight
-            };
+                new Rectangle();
+            }
             TypeFigure = LocalStorage.ListFigure;
-            Result = new RelayCommand(_ => ResultAction(Rectangle));
-        }
 
-        private double text;
-        public double TextWidth 
-        { 
-            get => text; 
-            set => SetProperty(ref text, value); 
         }
-
-        public double TextHeight
-        {
-            get => text;
-            set => SetProperty(ref text, value);
-        }
-
-        public ICommand Result { get; }
-        public void ResultAction(Rectangle rectangle)
-        {
-            rectangle.Width = TextWidth;
-            rectangle.Height = TextHeight;
-            OnPropertyChanged(nameof(Rectangle));
-        }
-
         private string isTypeFigure;
         public string IsTypeFigure
         {
@@ -64,7 +38,7 @@ namespace Lessons.VM
                 {
                     new Rectangle();
                 }
-                OnPropertyChanged(nameof(Rectangle));
+                OnPropertyChanged(nameof(FirstPageVM));
             }
         }
 
