@@ -20,6 +20,7 @@ namespace Lessons.VM
             {
                 new Rectangle();
             }
+            OnPropertyChanged(nameof(FirstPageVM));
             TypeFigure = LocalStorage.ListFigure;
 
         }
@@ -30,15 +31,6 @@ namespace Lessons.VM
             set
             {
                 SetProperty(ref isTypeFigure, value);
-                if (value == "Квадрат")
-                {
-                    new Square();
-                }
-                else if (value == "Прямоугольник")
-                {
-                    new Rectangle();
-                }
-                OnPropertyChanged(nameof(FirstPageVM));
             }
         }
 
