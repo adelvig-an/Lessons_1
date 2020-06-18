@@ -30,7 +30,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -44,7 +44,8 @@
             <ComboBox
                 x:Name="cbxFigure"
                 Margin="5"
-                ItemsSource="{Binding TypeFigure}" />
+                ItemsSource="{Binding TypeFigure}"
+                SelectedItem="{Binding IsTypeFigure}"/>
         </StackPanel>
 
 
