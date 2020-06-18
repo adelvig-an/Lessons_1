@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Lessons.DbLayer
 {
-    class FileIOService
+    public class FileIOService
     {
         private readonly string PATH;
 
