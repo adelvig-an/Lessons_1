@@ -30,7 +30,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -47,9 +47,19 @@
                 ItemsSource="{Binding TypeFigure}" />
         </StackPanel>
 
-        <StackPanel Grid.Row="2" Grid.Column="1">
-        <ContentControl Content="{Binding Figure}" />
-        </StackPanel>
+        <ItemsControl Grid.Row="2"
+                Grid.Column="1"
+                HorizontalAlignment="Center" ItemsSource="{Binding IsTypeFigure}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <StackPanel Grid.Row="2" Grid.Column="1">
+                            <ContentControl Content="{Binding Figure}" />
+                        </StackPanel>
+                    </WrapPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
 
         <!--<ItemsControl Grid.Row="2"
                 Grid.Column="1"
