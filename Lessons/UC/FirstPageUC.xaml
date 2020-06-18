@@ -20,16 +20,15 @@
     </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
+            <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Row="1" Grid.Column="1">
@@ -38,6 +37,10 @@
                 x:Name="cbxFigure"
                 Margin="5"
                 ItemsSource="{Binding TypeFigure}" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1">
+        <ContentControl Content="{Binding Figure}" />
         </StackPanel>
 
         <!--<ItemsControl Grid.Row="2"
