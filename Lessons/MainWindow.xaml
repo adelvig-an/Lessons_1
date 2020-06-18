@@ -15,6 +15,12 @@
         <DataTemplate DataType="{x:Type vm:FirstPageVM}">
             <uc:FirstPageUC />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:SquareVM}">
+            <uc:SquareUC />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:RectangleVM}">
+            <uc:RectangleUC />
+        </DataTemplate>
     </Window.Resources>
     <Grid>
         <ContentControl Content="{Binding CurrentPage}" />

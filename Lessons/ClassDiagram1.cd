@@ -1,42 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Lessons.VM.FirstPageVM">
-    <Position X="2" Y="3.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAAMAAAAAAAAQAAQAgAIAIAAAggAAAAAA=</HashCode>
-      <FileName>VM\FirstPageVM.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lessons.VM.MainVM">
-    <Position X="4.25" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
-      <FileName>VM\MainVM.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lessons.VM.PageVM" Collapsed="true">
-    <Position X="2" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>VM\PageVM.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lessons.VM.ViewModelBase" Collapsed="true">
-    <Position X="3.25" Y="1" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAEAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>VM\ViewModelBase.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
   <Class Name="Lessons.Model.Square" Collapsed="true">
-    <Position X="8.5" Y="2.5" Width="1.5" />
+    <Position X="7.5" Y="1.75" Width="1.5" />
     <InheritanceLine Type="Lessons.Model.Figures" FixedToPoint="true">
       <Path>
         <Point X="7.25" Y="1.062" />
-        <Point X="7.25" Y="2.125" />
-        <Point X="9.312" Y="2.125" />
-        <Point X="9.312" Y="2.5" />
+        <Point X="7.25" Y="1.375" />
+        <Point X="8.312" Y="1.375" />
+        <Point X="8.312" Y="1.75" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -45,14 +16,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Lessons.Model.Rectangle" Collapsed="true">
-    <Position X="6" Y="2.5" Width="1.5" />
+    <Position X="5.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAQBAAAA=</HashCode>
       <FileName>Model\Rectangle.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lessons.Model.LocalStorage" Collapsed="true">
-    <Position X="7.5" Y="4.25" Width="1.5" />
+    <Position X="7.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\LocalStorage.cs</FileName>
@@ -64,6 +35,49 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBAAAA=</HashCode>
       <FileName>Model\Figures.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="Lessons.VM.FirstPageVM" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAEIAAABAAgAAAAAA=</HashCode>
+      <FileName>VM\FirstPageVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lessons.VM.MainVM" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>VM\MainVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lessons.VM.PageVM" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VM\PageVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lessons.VM.RectangleVM" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAEAAAAAAAAQAAQAgAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>VM\RectangleVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lessons.VM.SquareVM" Collapsed="true">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAQAAQAAAAAIAAAgAAAAAAA=</HashCode>
+      <FileName>VM\SquareVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lessons.VM.ViewModelBase" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VM\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

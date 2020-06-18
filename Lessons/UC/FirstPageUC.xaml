@@ -40,7 +40,7 @@
                 ItemsSource="{Binding TypeFigure}" />
         </StackPanel>
 
-        <ItemsControl Grid.Row="2"
+        <!--<ItemsControl Grid.Row="2"
                 Grid.Column="1"
                 HorizontalAlignment="Center" ItemsSource="{Binding IsTypeFigure}">
             <ItemsControl.ItemTemplate>
@@ -123,7 +123,7 @@
                     </StackPanel>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
-        </ItemsControl>
+        </ItemsControl>-->
 
 
     </Grid>

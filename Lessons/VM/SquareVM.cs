@@ -14,7 +14,7 @@ namespace Lessons.VM
         {
             Square = new Square
             {
-                Width = TextWidth,
+                Width = TextWidth
             };
             Result = new RelayCommand(_ => ResultAction(Square));
         }
